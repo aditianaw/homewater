@@ -26,8 +26,9 @@ if(count($depot) > 0):
 
         <tr <?=$odd ? "class=\"pure-table-odd\"" : ""; ?>>
         <td><?=$depot->getID() ?></td>
-		<td><?=$depot->getNama() ?></td>
         <td><?=$depot->getDepot() ?></td>
+		<td><?=$depot->getNama() ?></td>
+
 		<td>	
 		
 			<a href="<?=$router->pathFor('depot-detail', ['id' => $depot->getId()])?>">Detail</a>

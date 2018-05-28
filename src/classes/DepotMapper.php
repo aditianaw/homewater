@@ -15,7 +15,7 @@ class DepotMapper extends Mapper
     }
 	public function getDepotDelivery() {
         $sql = "SELECT id,nama, depot
-            from depot where depot = 'delivery' order by id asc ";
+            from depot where nama = 'delivery' order by id asc ";
         $stmt = $this->db->query($sql);
 
         $results = [];
